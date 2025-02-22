@@ -17,5 +17,13 @@ public class CustomerController {
     public void addCustomer(@RequestBody Customer customer){
         service.addCustmer(customer);
     }
+    @GetMapping("/search-by-id/{id}")
+    public Customer searchById(@PathVariable Integer id){
+        return service.searchById(id);
+    }
 
+    @DeleteMapping("/delete/{id}")
+    public void deleteCustomer(@PathVariable Integer id){
+        service.deleteCustomer(id);
+    }
 }
