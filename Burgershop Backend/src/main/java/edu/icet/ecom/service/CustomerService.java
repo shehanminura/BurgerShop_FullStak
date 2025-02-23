@@ -8,4 +8,8 @@ public interface CustomerService {
     Customer searchById(Integer id);
 
     void deleteCustomer(Integer id);
+
+    default void updateCustomer(Customer customer) {
+
+    }
 }
