@@ -55,6 +55,15 @@
             <version>3.2.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.projectnessie.nessie/nessie-versioned-persist-non-transactional -->
+        <dependency>
+            <groupId>org.projectnessie.nessie</groupId>
+            <artifactId>nessie-versioned-persist-non-transactional</artifactId>
+            <version>0.74.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
     </dependencies>
 
 </project>
